@@ -1,0 +1,103 @@
+/* 🔐 Auth Page Styling (Login / Register) */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: #f2f5f9;
+}
+
+.auth-box {
+  background: white;
+  padding: 40px 35px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px; /* 👈 keeps it compact */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.auth-box h2 {
+  margin-bottom: 25px;
+  color: #3f51b5;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus {
+  border-color: #3f51b5;
+  box-shadow: 0 0 4px rgba(63, 81, 181, 0.4);
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3f51b5, #5c6bc0);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #2c387e, #3f51b5);
+}
+
+.btn-secondary {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #d6d6d6;
+}
+
+.auth-switch {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.auth-switch a {
+  color: #3f51b5;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .auth-box {
+    padding: 30px 25px;
+  }
+}
